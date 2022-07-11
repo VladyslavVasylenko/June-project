@@ -4,12 +4,14 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 body {
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .header {
@@ -57,6 +59,135 @@ body {
   z-index: 3;
 }
 
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 0 10px;
+}
+
+.main .second-block {
+  padding-bottom: 50px;
+}
+
+.main .second-block .first-article {
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  padding: 0 20px 20px 20px;
+}
+
+.main .second-block .first-article .first-article__title {
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.main .second-block .second-article {
+  padding-bottom: 30px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.main .second-block .second-article .second-article__title {
+  color: #07002a;
+  background-color: #ecffff;
+  padding: 20px;
+  margin-bottom: 3px;
+}
+
+.main .second-block .second-article .second-article__title .another {
+  background-color: #07002a;
+  color: white;
+  text-transform: uppercase;
+  padding: 3px 10px;
+}
+
+.main .second-block .second-article .conteiner-text {
+  padding: 20px 20px 30px 20px;
+  background-color: #ecffff;
+}
+
+.main .second-block .second-article .conteiner-text .second-article__text {
+  margin-bottom: 30px;
+}
+
+.main .second-block .second-article .conteiner-text .second-article__btn {
+  width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #39b6ff;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.main .second-block .second-article .conteiner-text .second-article__btn:hover {
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
+
+.main .second-block .second-article .conteiner-text .second-article__btn:active {
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+}
+
+.main .second-block .three-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main .second-block .three-article .img {
+  width: 300px;
+  height: 300px;
+}
+
+.main .second-block .three-article .container-contant {
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.main .second-block .three-article .container-contant .three-article__title {
+  margin-bottom: 20px;
+}
+
+.main .second-block .three-article .container-contant .three-article__text {
+  margin-bottom: 20px;
+}
+
+.main .second-block .three-article .container-contant .three-article__btn {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: #ffcc00;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.main .second-block .three-article .container-contant .three-article__btn:hover {
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
+
+.main .second-block .three-article .container-contant .three-article__btn:active {
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+}
+
 @media screen and (max-width: 920px) {
   .header {
     background-image: url(../image/PNG/Hero-Illustration.png);
@@ -74,8 +205,36 @@ body {
     background-repeat: no-repeat;
     position: relative;
     top: 0;
-    left: 30%;
     z-index: 3;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .three-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .three-article .img {
+    width: 250px;
+    height: 100%;
+  }
+  .three-article .container-contant {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .image {
+    left: 40%;
   }
 }
 
