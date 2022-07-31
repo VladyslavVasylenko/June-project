@@ -41,7 +41,18 @@
             check it out for yourself!
           </p>
   
-          <button class="second-article__btn">login</button>
+          <button class="second-article__btn" id="formLogin">login</button>
+
+          <div class="form">
+            <form action="" id="form-first" class="form-first">
+              <input class='name' placeholder='Name' required> 
+              <input class='password' placeholder='Password' type="password" min="5" required> 
+              <input class='config-password' placeholder='Password config' type="password" min="5" required>
+              <button class='btn-form' type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="table"></div>
         </div>
 
       </div>
@@ -76,10 +87,6 @@
       </p>
 
       <div class="video">
-        <!-- <iframe class="video__video"
-          src="https://www.youtube.com/embed/H9vNq1-FGgc">
-        </iframe> -->
-
         <div id="player" class="video__video"></div>
 
         <div class="video__img">
@@ -98,11 +105,12 @@
 
     <p class="footer__text">The silver lining to a down market...</p>
 
-    <a href="https://twitter.com" class="footer__twitter-link">follow</a>
+    <a href="https://twitter.com" class="footer__twitter-link" target="_blank">follow</a>
 
     <img src="./image/PNG/Meme.png" alt="Meme" class="footer__img">
   </footer>
-
+  
+  <script src="./js/form-login.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

@@ -316,6 +316,101 @@ body {
           box-shadow: 0 0 5px black;
 }
 
+.form {
+  display: none;
+  background-color: black;
+}
+
+.form .form-first {
+  max-width: 300px;
+  margin: 20% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form .form-first .name {
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.form .form-first .password {
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.form .form-first .config-password {
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.form .form-first .btn-form {
+  border: none;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #00d0ff;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px black;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .8s;
+  transition: all ease-in-out .8s;
+}
+
+.form .form-first .btn-form:hover {
+  color: black;
+  text-shadow: 0 0 5px white;
+}
+
+.table {
+  display: none;
+  background-color: #67b6ff;
+}
+
+.table .thank {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  z-index: 99999;
+}
+
 @media screen and (max-width: 920px) {
   .header {
     background-image: url(../image/PNG/Hero-Illustration.png);
